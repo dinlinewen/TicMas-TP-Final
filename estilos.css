@@ -1,0 +1,503 @@
+/* font-family: 'Fira Sans Condensed', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Satisfy', cursive;
+font-family: 'Acme', sans-serif;
+
+Colores:
+#454851  rgb(69, 72, 81)  Oscuro
+#73956F rgb(115, 149, 111) 
+#7BAE7F rgb(123, 174, 127)
+#95D7AE rgb(149, 215, 174)
+#FCEFF9 rgb(252,239,249) Claro
+#004594 rgb(0, 69, 148) Azul
+
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #454851;
+  font-size: 12px;
+}
+
+/* Navegación */
+
+nav {
+  background-color: #95d7ae;
+  overflow: hidden;
+  color: #454851;
+  font-family: "Libre Baskerville", serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: 0.5em solid #454851;
+  z-index: 99;
+}
+
+nav .cv {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.5em;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #454851;
+}
+
+.nav ul li {
+  display: inline;
+  text-align: none;
+  list-style: none;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #454851;
+  padding: 0.5em 1em;
+}
+
+.nav a:hover {
+  background-color: #fceff9;
+}
+
+.nav-responsive {
+  background-color: #1cb698;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Presentación */
+header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  color: #fceff9;
+  font-family: "Satisfy", cursive;
+  margin-top: 3em;
+  background-image: url("Imagenes/pinceladas.jpg");
+  background-size: cover;
+}
+
+.header-contenido {
+  max-width: 80%;
+  left: 0;
+  background: linear-gradient(to left, rgb(115, 149, 111) 60%, rgb(69, 72, 81));
+  margin: auto;
+  display: flex;
+}
+
+.contenedor-img img {
+  border: 2px solid #95d7ae;
+  border-radius: 100%;
+  margin: auto;
+  display: flex;
+  width: 100%;
+}
+
+.header-persona {
+  min-width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+
+.header-contenido h1 {
+  font-size: calc(4em + 5vw);
+}
+
+.header-contenido h2 {
+  font-size: calc(1em + 1vw);
+  font-family: "Acme", sans-serif;
+  margin-bottom: 0.5em;
+}
+
+.header-contenido .redes a {
+  color: #95d7ae;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #7bae7f;
+  border-radius: 100%;
+  width: calc(1em + 1vw);
+  height: calc(1em + 1vw);
+  line-height: calc(1em + 1vw);
+  font-size: calc(1em + 1vw);
+  transition: 0.3s;
+  margin: calc(0.5em + 1vw);
+  padding: 2px;
+}
+
+.header-contenido .redes a:hover {
+  background-color: #004594;
+}
+
+/* Cuerpo principal M A I N */
+main {
+  background-image: linear-gradient(rgba(252,239,249, 0.7), rgba(69,72,81,0.8)),
+  url(Imagenes/texturafondo1920px.jpg);
+
+}
+section {
+  color: #95d7ae;
+  top: 0;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Sección SOBRE MÍ */
+
+.sobremi {
+  background: linear-gradient(
+    to top left,
+    rgba(69, 72, 81, 0.7),
+    rgb(0, 69, 148, 1)
+  );
+  padding: 20px 10px;
+  border-top: 3px solid rgba(69, 72, 81, 0.7);
+}
+.sobremi h2 {
+  font-size: calc(3em + 1vw);
+  font-family: "Acme", sans-serif;
+  text-align: center;
+  color: #fceff9;
+}
+
+.sobremi .seccion-contenido p {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1.4em;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.sobremi .fila {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(
+    to bottom right,
+    rgba(30, 35, 38, 1),
+    rgba(110, 112, 113, 0.3)
+  );
+  margin: auto;
+}
+
+.sobremi .fila .col {
+  width: auto;
+}
+
+.sobremi .fila .col h3 {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-style: oblique;
+  font-size: 2em;
+  letter-spacing: 0.5em;
+  margin: 0.3em;
+  text-align: left;
+  background: linear-gradient(
+    to bottom right,
+    rgba(30, 35, 38, 1),
+    rgba(110, 112, 113, 0.3)
+  );
+}
+
+.sobremi .misdatos-caja {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sobremi .misdatos-caja .misdatos {
+  width: 200px;
+  height: 100px;
+  background: linear-gradient(to top left, #454851 80%, #004594);
+  border-radius: 10px;
+  border: 2px solid #004594;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.sobremi .misdatos-caja .misdatos:hover {
+  background: #004594;
+}
+
+.sobremi .misdatos-caja .misdatos strong {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+}
+.sobremi .misdatos-caja .misdatos i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.sobremi .fila .col .habilidades {
+  background: linear-gradient(
+    to bottom right,
+    rgba(30, 35, 38, 1),
+    rgba(110, 112, 113, 0.3)
+  );
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 1.2em;
+  text-align: left;
+}
+.sobremi .fila .col ul {
+  list-style: none;
+}
+
+.sobremi .fila .col ul li {
+  margin: 12px 0;
+}
+.sobremi .fila .col ul li strong {
+  display: inline-block;
+  color: #73956f;
+  width: 150px;
+  padding-left: 5px;
+  letter-spacing: 0.1em;
+}
+
+/* Sección CURRÍCULUM */
+.curriculum {
+  font-family: "Fira Sans Condensed", sans-serif;
+  background: linear-gradient(
+    to top left,
+    rgba(69, 72, 81, 0.3),
+    rgba(115, 149, 111, 0.7)
+  );
+  padding: 20px 10px;
+  border-top: 3px solid rgba(69, 72, 81, 0.7);
+}
+
+.curriculum .seccion-contenido {
+  max-width: 80%;
+  margin: auto;
+}
+.curriculum .seccion-contenido p {
+  font-size: 1.4em;
+  width: 80%;
+  margin: 20px auto;
+  color:#73956f;
+}
+.curriculum h2{
+  font-size: calc(3em + 1vw);
+  font-family: "Acme", sans-serif;
+  text-align: center;
+  color: #fceff9;
+  padding-bottom: .5em;
+
+}
+.curriculum .fila{
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    to bottom right,
+    rgba(30, 35, 38, 0.8),
+    rgba(110, 112, 113, 0.3)
+  );
+  margin: auto;
+}
+
+.curriculum .fila .col {
+  width: 49%;
+  padding: 0 20px;
+}
+
+.curriculum .fila .col h3 {
+  font-style: oblique;
+  font-size: 2.5em;
+  margin: 0.3em;
+  text-align: left;
+  background: linear-gradient(
+    to bottom right,
+    #004594,
+    rgba(110, 112, 113, 0.3)
+  );
+}
+
+.curriculum .fila .izquierda{
+  border-right: 2px solid #004594;
+}
+.curriculum .fila .derecha{
+  border-left: 2px solid #004594;
+}
+.curriculum .fila .item{
+  padding: 25px;
+  margin-bottom: 30px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(30, 35, 38, 1),
+    rgba(110, 112, 113, 0.4)
+  );
+  position: relative;
+}
+.curriculum .fila .item h4{
+  font-size: 2em;
+  letter-spacing: 0.3em;
+  margin-bottom: 10px;
+}
+.curriculum .fila .item .lugar {
+  font-size: 1.5em;
+  color:#73956f;
+  display: block;
+}
+.curriculum .fila .item .fecha{
+  font-size: 1.5em;;
+  display: block;
+  margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+  line-height: 24px;
+}
+.curriculum .fila .izq{
+  border-right: 2px solid #95d7ae;
+  margin-right: 20px;
+}
+.curriculum .fila .der{
+  border-left: 2px solid #95d7ae;
+  margin-left: 20px;
+}
+.curriculum .fila .item .conector-izq {
+  height: 2px;
+  background-color: #95d7ae;
+  width: 47px;
+  position: absolute;
+  top: 50%;
+  right: -47px;
+  z-index: 5;
+}
+.curriculum .fila .item .conector-izq .circulo-izq{
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #95d7ae;
+  float: right;
+  position: relative;
+  bottom: 4px;
+}
+.curriculum .fila .item .conector-der{
+  height: 2px;
+  background-color: #95d7ae;
+  width: 47px;
+  position: absolute;
+  top: 50%;
+  left: -47px;
+  z-index: 5;
+}
+.curriculum .fila .item .conector-der .circulo-der{
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #95d7ae;
+  float: left;
+  position: relative;
+  bottom: 4px;
+}
+
+.curriculum button {
+  cursor: pointer;
+  background: linear-gradient(
+    to bottom right,
+    rgba(30, 35, 38, 1),
+    rgba(110, 112, 113, 0.4)
+  );
+  border: 2px solid #95d7ae;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #95d7ae;
+  position: relative;
+  z-index: 10;
+}
+
+.curriculum button .guardar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color:#73956f;
+  z-index: -1;
+  transition: 1s;
+}
+
+.curriculum button:hover .guardar {
+  width: 100%;
+}
+
+/* Sección Portfolio */
+
+.portfolio {
+  font-family: "Fira Sans Condensed", sans-serif;
+  background: linear-gradient(
+    to top left,
+    rgba(69, 72, 81, 0.3),
+    rgba(115, 149, 111, 0.7)
+  );
+  padding: 20px 10px;
+  border-top: 3px solid rgba(69, 72, 81, 0.7);
+}
+
+.portfolio h2 {
+  font-size: calc(3em + 1vw);
+  font-family: "Acme", sans-serif;
+  text-align: center;
+  color: #fceff9;
+  padding-bottom: .5em;
+}
+/* @media (min-width: 40em) {
+  /*
+  nav ul,
+  header ul {
+    display: flex;
+  }*/
+
+/*
+@media (max-width: 800px) {
+  /* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: rigth;
+    margin: 0.5em;
+  }
+
+  header img {
+    width: calc(5em + 5vw);
+  }*/
+/*
+  nav {
+    display: none;
+  }
+
+  .nav-responsive {
+    display: block;
+  }
+
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #252A2E;
+    width: 180px;
+  }
+*/
