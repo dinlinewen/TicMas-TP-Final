@@ -623,22 +623,25 @@ section {
     rgba(69, 72, 81, 0.7)
   );
   top: 40%;
-  left:40%;
+  left:50%;
+  padding: 20px;
+  max-width: 70%;
   border-radius: 0 0 10% 10%;
+  transform: translate(-50%, -50%);
 }
 
 .contacto .col .info ul{
   list-style: none;
 }
 .contacto .col .info ul li{
-  margin: 1.5em;
-  font-size: 2em;
+  margin: 1em;
+  font-size: calc(0.3em + 1vw);
   letter-spacing: 0.2em;
 }
 .contacto .col .info ul li i{
   color: #95d7ae;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 /* @media (min-width: 40em) {
   /*
