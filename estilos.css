@@ -149,9 +149,11 @@ header {
 
 /* Cuerpo principal M A I N */
 main {
-  background-image: linear-gradient(rgba(252,239,249, 0.7), rgba(69,72,81,0.8)),
-  url(Imagenes/texturafondo1920px.jpg);
-
+  background-image: linear-gradient(
+      rgba(252, 239, 249, 0.7),
+      rgba(69, 72, 81, 0.8)
+    ),
+    url(Imagenes/texturafondo1920px.jpg);
 }
 section {
   color: #95d7ae;
@@ -180,7 +182,7 @@ section {
 }
 
 .sobremi .seccion-contenido p {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 1.4em;
   width: 80%;
   margin: 20px auto;
@@ -190,10 +192,11 @@ section {
   display: flex;
   justify-content: space-around;
   background: linear-gradient(
-    to bottom right,
-    rgba(30, 35, 38, 1),
-    rgba(110, 112, 113, 0.3)
-  ), url("Imagenes/textura1200px.jpg");
+      to bottom right,
+      rgba(30, 35, 38, 1),
+      rgba(110, 112, 113, 0.3)
+    ),
+    url("Imagenes/textura1200px.jpg");
   margin: auto;
 }
 
@@ -292,17 +295,16 @@ section {
   font-size: 1.4em;
   width: 80%;
   margin: 20px auto;
-  color:#73956f;
+  color: #73956f;
 }
-.curriculum h2{
+.curriculum h2 {
   font-size: calc(3em + 1vw);
   font-family: "Acme", sans-serif;
   text-align: center;
   color: #fceff9;
-  padding-bottom: .5em;
-
+  padding-bottom: 0.5em;
 }
-.curriculum .fila{
+.curriculum .fila {
   display: flex;
   justify-content: space-between;
   background: linear-gradient(
@@ -330,13 +332,13 @@ section {
   );
 }
 
-.curriculum .fila .izquierda{
+.curriculum .fila .izquierda {
   border-right: 2px solid #004594;
 }
-.curriculum .fila .derecha{
+.curriculum .fila .derecha {
   border-left: 2px solid #004594;
 }
-.curriculum .fila .item{
+.curriculum .fila .item {
   padding: 25px;
   margin-bottom: 30px;
   background: linear-gradient(
@@ -346,29 +348,29 @@ section {
   );
   position: relative;
 }
-.curriculum .fila .item h4{
+.curriculum .fila .item h4 {
   font-size: 2em;
   letter-spacing: 0.3em;
   margin-bottom: 10px;
 }
 .curriculum .fila .item .lugar {
   font-size: 1.5em;
-  color:#73956f;
+  color: #73956f;
   display: block;
 }
-.curriculum .fila .item .fecha{
-  font-size: 1.5em;;
+.curriculum .fila .item .fecha {
+  font-size: 1.5em;
   display: block;
   margin-bottom: 10px;
 }
-.curriculum .fila .item p{
+.curriculum .fila .item p {
   line-height: 24px;
 }
-.curriculum .fila .izq{
+.curriculum .fila .izq {
   border-right: 2px solid #95d7ae;
   margin-right: 20px;
 }
-.curriculum .fila .der{
+.curriculum .fila .der {
   border-left: 2px solid #95d7ae;
   margin-left: 20px;
 }
@@ -381,7 +383,7 @@ section {
   right: -47px;
   z-index: 5;
 }
-.curriculum .fila .item .conector-izq .circulo-izq{
+.curriculum .fila .item .conector-izq .circulo-izq {
   display: block;
   height: 10px;
   width: 10px;
@@ -391,7 +393,7 @@ section {
   position: relative;
   bottom: 4px;
 }
-.curriculum .fila .item .conector-der{
+.curriculum .fila .item .conector-der {
   height: 2px;
   background-color: #95d7ae;
   width: 47px;
@@ -400,7 +402,7 @@ section {
   left: -47px;
   z-index: 5;
 }
-.curriculum .fila .item .conector-der .circulo-der{
+.curriculum .fila .item .conector-der .circulo-der {
   display: block;
   height: 10px;
   width: 10px;
@@ -435,7 +437,7 @@ section {
   left: 0;
   width: 0;
   height: 100%;
-  background-color:#73956f;
+  background-color: #73956f;
   z-index: -1;
   transition: 1s;
 }
@@ -457,7 +459,7 @@ section {
   border-top: 3px solid rgba(69, 72, 81, 0.7);
 }
 
-.portfolio .seccion-contenido{
+.portfolio .seccion-contenido {
   max-width: 80%;
   margin: auto;
 }
@@ -466,7 +468,7 @@ section {
   font-family: "Acme", sans-serif;
   text-align: center;
   color: #fceff9;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 }
 
 .portfolio h3 {
@@ -474,7 +476,7 @@ section {
 }
 .portfolio .seccion-contenido p {
   font-size: 1.4em;
-  color:#73956f;
+  color: #73956f;
 }
 
 .portfolio .galeria {
@@ -486,7 +488,7 @@ section {
 .portfolio .galeria .proyecto {
   position: relative;
   max-width: 340px;
-  height:fit-content;
+  height: fit-content;
   margin: 1em;
   cursor: pointer;
 }
@@ -495,7 +497,7 @@ section {
   width: 100%;
   display: block;
   border: 2px solid rgba(69, 72, 81, 0.7);
-  border-radius: 30%;;
+  border-radius: 30%;
 }
 
 .portfolio .galeria .proyecto .overlay {
@@ -504,7 +506,11 @@ section {
   width: 100%;
   height: 100%;
   text-align: right;
-  background: linear-gradient(to top left, rgba(69, 72, 81, 0.8) 70%,rgba(0, 69, 148, 1));
+  background: linear-gradient(
+    to top left,
+    rgba(69, 72, 81, 0.8) 70%,
+    rgba(0, 69, 148, 1)
+  );
   border-radius: 30%;
   display: flex;
   flex-direction: column;
@@ -514,7 +520,7 @@ section {
   opacity: 0;
 }
 
-.portfolio .galeria .proyecto .overlay h3{
+.portfolio .galeria .proyecto .overlay h3 {
   transition: 1s;
 }
 
@@ -526,8 +532,114 @@ section {
   font-size: 3em;
 }
 
+/* Sección CONTACTO */
 
+.contacto {
+  font-family: "Fira Sans Condensed", sans-serif;
+  background: linear-gradient(
+      to top left,
+      rgba(69, 72, 81, 0.7),
+      rgb(0, 69, 148, 1));
+  padding: 20px 10px;
+  border-top: 3px solid rgba(69, 72, 81, 0.7);
+}
 
+.contacto .seccion-contenido {
+  max-width: 80%;
+  margin: auto;
+}
+
+.contacto h2 {
+  font-size: calc(3em + 1vw);
+  font-family: "Acme", sans-serif;
+  text-align: center;
+  color: #fceff9;
+  padding-bottom: 0.5em;
+}
+
+.contacto .fila {
+  display: flex;
+}
+
+.contacto .col {
+  width: 50%;
+  padding: 1em;
+  position: relative;
+}
+
+.contacto .col input, .contacto .col textarea {
+  display: block;
+  width: 100%;
+  padding: 1.3em;
+  border: 1px solid #fceff9;
+  border-radius: 10%;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.5em;
+  background-color: #454851;
+  color: #fceff9;
+  margin-bottom: 1.8em;
+}
+
+.contacto button{
+  cursor: pointer;
+  background-color: #454851;
+  border: 2px solid #fceff9;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 1.3em;
+  color: #fceff9;
+  position: relative;
+  z-index: 10;
+}
+
+.contacto button .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #73956f;
+  z-index: -1;
+  transition: 1s;
+}
+
+.contacto button:hover .overlay{
+  width: 100%;
+}
+
+.contacto .col img{
+  width: 100%;
+  opacity: 0.5;
+  border-radius: 10%;
+}
+
+.contacto .col .info{
+  position: absolute;
+  background: linear-gradient(
+    to bottom left,
+    rgba(69, 72, 81, 0.3),
+    rgba(69, 72, 81, 0.7)
+  );
+  top: 40%;
+  left:40%;
+  border-radius: 0 0 10% 10%;
+}
+
+.contacto .col .info ul{
+  list-style: none;
+}
+.contacto .col .info ul li{
+  margin: 1.5em;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+}
+.contacto .col .info ul li i{
+  color: #95d7ae;
+  display: inline-block;
+  margin-right: 20px;
+}
 /* @media (min-width: 40em) {
   /*
   nav ul,
