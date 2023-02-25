@@ -197,7 +197,7 @@ section {
       rgba(30, 35, 38, 1),
       rgba(110, 112, 113, 0.3)
     ),
-    url("Imagenes/textura1200px.jpg");
+    url("Imagenes/textura1200px.jpg") center center repeat;
   margin: auto;
 }
 
