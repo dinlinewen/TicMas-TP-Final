@@ -97,7 +97,8 @@ header {
 .header-contenido {
   max-width: 80%;
   left: 0;
-  background: linear-gradient(to left, rgb(115, 149, 111) 60%, rgb(69, 72, 81));
+  background: linear-gradient(
+    to left, rgb(115, 149, 111) 60%, rgb(69, 72, 81));
   margin: auto;
   display: flex;
 }
@@ -457,6 +458,7 @@ section {
   );
   padding: 50px 20px;
   border-top: 3px solid rgba(69, 72, 81, 0.7);
+  border-bottom: 3px solid rgba(69, 72, 81, 0.7);
 }
 
 .portfolio .seccion-contenido {
@@ -537,15 +539,15 @@ section {
 .contacto {
   font-family: "Fira Sans Condensed", sans-serif;
   background: linear-gradient(
-      to top left,
-      rgba(69, 72, 81, 0.7),
-      rgb(0, 69, 148, 1));
+    to top left,
+    rgba(69, 72, 81, 0.7),
+    rgb(0, 69, 148, 1)
+  );
   padding: 20px 10px;
-  border-top: 3px solid rgba(69, 72, 81, 0.7);
 }
 
 .contacto .seccion-contenido {
-  max-width: 80%;
+  max-width: 70%;
   margin: auto;
 }
 
@@ -567,20 +569,22 @@ section {
   position: relative;
 }
 
-.contacto .col input, .contacto .col textarea {
+.contacto .col input,
+.contacto .col textarea {
   display: block;
-  width: 100%;
+  width: 80%;
   padding: 1.3em;
   border: 1px solid #fceff9;
   border-radius: 10%;
   font-family: "Libre Baskerville", serif;
   font-size: 1.5em;
   background-color: #454851;
+  opacity: 0.7;
   color: #fceff9;
-  margin-bottom: 1.8em;
+  margin: 0.9em auto;
 }
 
-.contacto button{
+.contacto button {
   cursor: pointer;
   background-color: #454851;
   border: 2px solid #fceff9;
@@ -594,7 +598,7 @@ section {
   z-index: 10;
 }
 
-.contacto button .overlay{
+.contacto button .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -605,43 +609,100 @@ section {
   transition: 1s;
 }
 
-.contacto button:hover .overlay{
+.contacto button:hover .overlay {
   width: 100%;
 }
 
-.contacto .col img{
+.contacto .col img {
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.2;
   border-radius: 10%;
 }
 
-.contacto .col .info{
-  position: absolute;
+.contacto .col .info {
+  position: relative;
   background: linear-gradient(
     to bottom left,
     rgba(69, 72, 81, 0.3),
     rgba(69, 72, 81, 0.7)
   );
-  top: 40%;
-  left:50%;
+  left: 50%;
+  bottom: 15%;
   padding: 20px;
   max-width: 70%;
   border-radius: 0 0 10% 10%;
   transform: translate(-50%, -50%);
 }
 
-.contacto .col .info ul{
+.contacto .col .info ul {
   list-style: none;
 }
-.contacto .col .info ul li{
+.contacto .col .info ul li {
   margin: 1em;
   font-size: calc(0.3em + 1vw);
   letter-spacing: 0.2em;
+  color: #fceff9;
 }
-.contacto .col .info ul li i{
+
+.contacto .col .info ul li i {
   color: #95d7ae;
   display: inline-block;
   margin-right: 10px;
+}
+
+/* Pie de Página */
+
+footer {
+  background-image: url("Imagenes/pinceladas.jpg");
+  background-size: cover;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+footer .redes {
+  margin: auto;
+  background: linear-gradient(
+    to bottom left,
+    rgba(69, 72, 81, 0.3),
+    rgba(69, 72, 81, 0.7)
+  );
+  width: 80%;
+}
+
+footer .redes a{
+  color: #95d7ae;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #7bae7f;
+  border-radius: 100%;
+  width: calc(1em + 1vw);
+  height: calc(1em + 1vw);
+  line-height: calc(1em + 1vw);
+  font-size: calc(1em + 1vw);
+  transition: 0.3s;
+  margin: calc(0.5em + 1vw);
+  padding: 2px;
+}
+
+footer .up{
+  display: block;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(
+      to bottom right,
+      #004594,
+      rgba(110, 112, 113, 0.7)
+    );
+    color: #fceff9;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 1.5em;
 }
 /* @media (min-width: 40em) {
   /*
