@@ -38,6 +38,7 @@ nav {
   justify-content: space-between;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   border: 0.5em solid #454851;
   z-index: 99;
@@ -51,6 +52,11 @@ nav .cv {
   padding: 0.5em;
   text-decoration: none;
   color: #454851;
+}
+
+nav .cv img{
+  max-width: 1.3em;
+  margin-right: 0.5em;
 }
 
 .nav ul li {
@@ -71,13 +77,15 @@ nav .cv {
   background-color: #fceff9;
 }
 
-.nav-responsive {
-  background-color: #1cb698;
-  color: #fff;
+.nav-responsive{
+  background-color: #454851;
+  color:#fff;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-  display: none;
+  margin-right: 5px;
+display: none;
+
 }
 
 /* Presentación */
@@ -704,6 +712,100 @@ footer .up{
     line-height: 50px;
     font-size: 1.5em;
 }
+
+@media screen and (max-width:980px){
+  nav{
+      display: none;
+  }
+  .nav-responsive{
+    display: block;
+}
+  .menu.responsive{
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 75px;
+      background-color: transparent;
+      width: 180px;
+  }
+  .menu.responsive ul{
+      display: block !important;
+  }
+  .menu.responsive ul li{
+      border-bottom: 1px solid #fff;
+      padding: 10px 0;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .header-contenido {
+    display: block;
+    width: 100%;
+  }
+  .header-contenido h1 {
+    font-size: 48px;
+  }
+
+.sobremi .fila, .curriculum .fila, .portfolio .galeria, .contacto .fila {
+  display:block;
+  width: max-content;
+}
+
+.sobremi h2, .curriculum h2, .portfolio h2, .contacto h2 {
+  font-size: 24px;
+}
+
+.sobremi p, .curriculum p, .portfolio p, .contacto p {
+  font-size: 12px;
+  width: 100%;
+}
+.sobremi .fila .col {
+  width: max-content;
+}
+
+.sobremi .fila .col h3 {
+  font-size: 18px;
+  letter-spacing: 0;
+}
+.sobremi .misdatos-caja .misdatos {
+  width: 120px;
+  height: 100px;
+}
+
+.sobremi .misdatos-caja .misdatos i {
+  font-size: 10px;
+}
+
+.sobremi .misdatos-caja .misdatos strong {
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: lighter;
+}
+.curriculum .fila .col {
+  width: 90%;
+}
+
+.curriculum .fila .derecha {
+  margin-left: 1.5em;
+}
+
+.portfolio .galeria {
+  width: 100%;
+}
+
+.portfolio .galeria .proyecto {
+  max-width: 100%;
+}
+
+.portfolio .galeria .proyecto img {
+  width: 100%;
+}
+
+.contacto .fila .col {
+  width: 100%;
+}
+}
 /* @media (min-width: 40em) {
   /*
   nav ul,
@@ -712,32 +814,4 @@ footer .up{
   }*/
 
 /*
-@media (max-width: 800px) {
-  /* nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: rigth;
-    margin: 0.5em;
-  }
 
-  header img {
-    width: calc(5em + 5vw);
-  }*/
-/*
-  nav {
-    display: none;
-  }
-
-  .nav-responsive {
-    display: block;
-  }
-
-  nav.responsive {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 75px;
-    background-color: #252A2E;
-    width: 180px;
-  }
-*/

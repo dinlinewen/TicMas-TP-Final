@@ -17,34 +17,36 @@
 
     <!-- Navegación-->
       <nav class="nav">
-        <div class="cv">Portfolio
+        <div class="cv">
+          <img src="Imagenes/favicon.png"/>urev
         </div>
 
         <div class="menu">
         <ul>
           <li>
-            <a href="#header">Inicio</a>
+            <a href="#header" onclick="seleccionar()">Inicio</a>
           </li>
           <li>
-            <a href="#sobremi">Sobre Mí</a>
+            <a href="#sobremi" onclick="seleccionar()">Sobre Mí</a>
           </li>
           <li>
-            <a href="#curriculum">Curriculum</a>
+            <a href="#curriculum" onclick="seleccionar()">Curriculum</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio" onclick="seleccionar()">Portfolio</a>
           </li>
           <li>
-            <a href="#contacto">Contacto</a>
+            <a href="#contacto" onclick="seleccionar()">Contacto</a>
           </li>
         </ul>
       </div>
+      <div class="nav-responsive" onclick="mostrarOcultarMenu()>
+        <i class="fa-solid fa-bars"></i>
+       </div>
+     </div>
       </nav>
 
-      <div class="nav-responsive">
-       <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
+      
 
 <!-- Sección Presentación-->
     <header>
@@ -353,5 +355,6 @@
     </div>
     </footer>
    
+    <script src="script.js"></script>
   </body>
 </html>
