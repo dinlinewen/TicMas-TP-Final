@@ -78,6 +78,8 @@ header .cv img{
 
 .contenedor-header header nav ul li a:hover{
   background-color: #fceff9;
+  border-radius: 10%;
+  border: 1px solid #454851;
 }
 /* .menu ul li {
   display: inline;
