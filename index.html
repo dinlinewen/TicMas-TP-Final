@@ -15,42 +15,48 @@
   </head>
   <body>
 
-    <!-- Navegación-->
-      <nav class="nav">
+    <!-- Navegación -->
+    <div class="contenedor-header">
+      <header>
         <div class="cv">
-          <img src="Imagenes/favicon.png"/>urev
+          <img src="Imagenes/favicon.png" />urev
         </div>
-
-        <div class="menu">
-        <ul>
-          <li>
-            <a href="#header" onclick="seleccionar()">Inicio</a>
-          </li>
-          <li>
-            <a href="#sobremi" onclick="seleccionar()">Sobre Mí</a>
-          </li>
-          <li>
-            <a href="#curriculum" onclick="seleccionar()">Curriculum</a>
-          </li>
-          <li>
-            <a href="#portfolio" onclick="seleccionar()">Portfolio</a>
-          </li>
-          <li>
-            <a href="#contacto" onclick="seleccionar()">Contacto</a>
-          </li>
-        </ul>
+    
+        <nav id="nav">
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#principal" onclick="seleccionar()">Inicio</a>
+              </li>
+              <li>
+                <a href="#sobremi" onclick="seleccionar()">Sobre Mí</a>
+              </li>
+              <li>
+                <a href="#curriculum" onclick="seleccionar()">Curriculum</a>
+              </li>
+              <li>
+                <a href="#portfolio" onclick="seleccionar()">Portfolio</a>
+              </li>
+              <li>
+                <a href="#contacto" onclick="seleccionar()">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
       </div>
-      <div class="nav-responsive" onclick="mostrarOcultarMenu()>
-        <i class="fa-solid fa-bars"></i>
-       </div>
-     </div>
-      </nav>
+    
+    
+    
 
-      
 
 <!-- Sección Presentación-->
-    <header>
-      <div id="header" class="header-contenido">
+    <article>
+      <div id="principal" class="article-contenido">
         <div class="contenedor-img">
           <img
             src="Imagenes/PerfilMujer.png"
@@ -58,7 +64,7 @@
             title="Perfil de Rebeca Purev"
           />
         </div>
-        <div class="header-persona">
+        <div class="article-persona">
         <h1>Rebeca Purev</h1>
         <h2>Artista Plástica - Diseñadora Gráfica</h2>
         <div class="redes">
@@ -70,7 +76,7 @@
         </div>
       </div>
       </div>
-    </header>
+    </article>
 
 <!-- Cuerpo principal M A I N -->
     <main id="main" class="cuerpo">
