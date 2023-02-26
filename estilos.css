@@ -237,7 +237,7 @@ section {
   font-family: "Fira Sans Condensed", sans-serif;
   font-style: oblique;
   font-size: 2em;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.2em;
   margin: 0.3em;
   text-align: left;
   background: linear-gradient(
@@ -744,12 +744,16 @@ footer .up{
       display: block;
       position: absolute;
       right: 0;
-      top: 75px;
+      top: 45px;
       background: linear-gradient(
-        to right,
+        to left,
         #fceff9,
         #73956f);
-      width: 180px;
+      width: 110px;
+      border-top-left-radius: 10%;
+      border-bottom-left-radius: 10%;
+      text-align: right;
+      padding-right: 10px;
   }
   nav.responsive ul{
       display: block !important;
@@ -758,21 +762,24 @@ footer .up{
       border-bottom: 1px solid #454851;
       padding: 10px 0;
   }
+  .article-contenido h1 {
+    font-size: 72px;
+  }
 }
 
-@media (max-width: 700px) {
+ @media (max-width: 700px) {
 
   .article-contenido {
     display: block;
     width: 100%;
   }
+  
   .article-contenido h1 {
     font-size: 48px;
   }
-
 .sobremi .fila, .curriculum .fila, .portfolio .galeria, .contacto .fila {
   display:block;
-  width: max-content;
+  width: 100%;
 }
 
 .sobremi h2, .curriculum h2, .portfolio h2, .contacto h2 {
@@ -829,12 +836,10 @@ footer .up{
   width: 100%;
 }
 }
-/* @media (min-width: 40em) {
-  /*
-  nav ul,
-  header ul {
-    display: flex;
-  }*/
 
-/*
+@media (max-width= 540px){
+  .misdatos-caja .misdatos {
+    display:inline-block;
+  }
+}
 
